@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent - 2024 - Home page about me">
+    <meta name="Muwanda Innocent" content="Student At BYU-IDAHO">
+    <link rel="stylesheet" href="/styles/base.css">	
+    <script src="/scripts/getdataes.js"></script>
+</head>
+<body>
+    <header>
+        <h1> WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent </h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/muwanda-innocent-8a45401a7">LinkedIn</a></li>
+                <li><a href=" https://byui.instructure.com/.">I-Learn</I></a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/1?lang=eng&id=17,19#p17">Scripture</a></li>
+                <li><a href="projects.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-container">
+        <section class="card"> 
+            <h2 class="about"> About Me</h2>
+            <div class="container">
+                <section>
+            
+                <p>Hello My name is Muwanda Innocet. i was born in Kampala the capital city of Uganda in East Africa.
+                    I am a student at BYU-Idaho. I am currently in my second year of study and hoping to finish my degree in 2026.
+                    I am a very hard working person and I am very passionate about what I do.
+                </p>      
+                    </section>
+
+                    <section class="img">
+                        <img src="images/profile.jpg" alt="Muwanda Innocent">
+                    </section>
+                    </section>
+
+            </div>
+          
+            
+        </section>
+        <section class="card">
+            <h2>Online Web platforms</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+            <ul>
+                <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                <li><a href="https://github.com/">GitHub.</a></li>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>        
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last modified " + document.lastModified;
+    </script>
+</body>
+</html>
