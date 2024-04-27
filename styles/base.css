@@ -96,7 +96,6 @@ main {
     padding: 10px;
     margin: auto;
     min-width: 200px;
-    max-width: 1fr;
     justify-content: space-between;
 }
 
