@@ -10,6 +10,8 @@
     <script src="scripts/getdates.js"></script>
 </head>
 <body>
+
+<!-- the header section -->
     <header>
         <h1> WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent </h1>
         <nav>
@@ -21,41 +23,44 @@
             </ul>
         </nav>
     </header>
-    <main class="flex-container">
-        <section class="card"> 
-            <h2 class="about"> About Me</h2>
-            <div class="container">
-                <section>
-            
-                <p>Hello My name is Muwanda Innocet. i was born in Kampala the capital city of Uganda in East Africa.
-                    I am a student at BYU-Idaho. I am currently in my second year of study and hoping to finish my degree in 2026.
-                    I am a very hard working person and I am very passionate about what I do.
-                </p>      
-                    </section>
 
-                    <section class="img">
-                        <img src="images/profile.jpg" alt="Muwanda Innocent">
-                    </section>
-                    </section>  
-            </div>
-        </section>
-        <section class="card">
-            <h2>Online Web platforms</h2>
-            <ul>
-                <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
-                <li><a href="https://github.com/">GitHub.</a></li>
-                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-            </ul>
-        </section>
+<!-- the main sectio -->
+    <main>
+       <section class="card-1">
+        <h2 class="mini-title">About Me</h2>
+        <div class="card-info-1">
+            <p>Hello My name is Muwanda Innocet. i was born in Kampala the capital city of Uganda in East Africa.
+                I am a student at BYU-Idaho. I am currently in my second year of study and hoping to finish my degree in 2026.
+                I am a very hard working person and I am very passionate about what I do.
+            </p>  
+            <img src="images/profile.jpg" alt="Muwanda Innocent">
+
+        </div>            
+        <h2 class="about-2">About Uganda</h2>
+        <div class="card-info-2">
+            <img src="images/Flag_of_Uganda.svg.png" alt="Flag_of_Uganda">    
+            <p class="ug">
+                Uganda is a landlocked country in East Africa. It is bordered by Kenya to the north, Tanzania to the east, Rwanda to the south, and the Democratic Republic of the Congo to the west.
+                It is the largest country in Africa by area and the second largest by population.
+            </p>
+
+        </div>
+        
+       </section>
+       <section class="card-2">
+        <h2 class="mini-title">Online we platforms</h2>
+         <ul>
+            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <li><a href="https://github.com/">GitHub.</a></li>
+            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        </ul>
+       </section>
     </main>
+
+<!-- the footer section -->
     <footer>
         <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala Uganda</p>
         <p id="lastModified"></p>
     </footer>
-
-    <script>        
-        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-        document.getElementById("lastModified").textContent = "Last modified " + document.lastModified;
-    </script>
 </body>
 </html>
