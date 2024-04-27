@@ -1,7 +1,9 @@
-const currentYear = new Date().getFullYear();
+function displayDateModified() {
+    const lastModified = new Date(document.lastModified);
+    const lastModifiedSpan = document.getElementById('displayDateModified');
+    lastModifiedSpan.textContent = lastModified.toLocaleString();
+}
 
-document.getElementById("year").textContent = currentYear;
-
-const lastModifiedDate = document.lastModified;
-
-document.getElementById("last-modified").textContent = lastModifiedDate;
+window.onload = function() {
+    displayDateModified();
+}
