@@ -1,19 +1,31 @@
+ :root {
+    --footer-and-header-color : green;
+    --light-green: rgb(183, 235, 183);
+    --background-color: rgba(255, 190, 49, 0.884);
+    --text-color: white;
+    --font-family: "Roboto", sans-serif;
+    --font-size: 1.2rem;
+    --font-weight: 500;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-family);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(255, 190, 49, 0.884);
+    background-color: var(--background-color);
 
 }
 
 
 h1 {
     font-size: 3rem;
-    color: white;
+    color: var(--text-color);
     width: 100%;
 
 }
@@ -25,8 +37,9 @@ main {
 
 header {
     text-align: center;
-    color: white;
-    background-color: green;
+    color: var(--text-color);
+    padding: 1rem;
+    background-color: var(--footer-and-header-color);
     width: 100%;
     border-bottom: solid red 5px;
 }
@@ -64,6 +77,10 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
+}
+
+#icon {
+    max-width: 30%;
 }
 
 footer {
