@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero page</title>
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent - 2024 - Home page about me" />
+  <meta name="author" content="Muwanda Innocent" />
+  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place-small.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Uganda</h1>
+  </header>
+  <div class="main-content">
+    <picture>
+      <source srcset="images/extralarge.webp" media="(min-width: 1000px)">
+      <source srcset="images/newmeduim.webp" media="(min-width: 550px)">
+      <!-- <img src="images/small.webp" alt="creste crane"> -->
+      <img src="images/small.webp" alt="crested crane">
+    </picture>
+    <section class="data-card">
+      <h2>Data</h2>
+      <table>
+        <tr>
+          <td>Area:</td>
+          <td>62.68 mi²</td>
+        </tr>
+        <tr>
+          <td>Population:</td>
+          <td>1.65 million</td>
+        </tr>
+        <tr>
+          <td>Capital:</td>
+          <td>Kampala</td>
+        </tr>
+        <tr>
+          <td>Languages:</td>
+          <td>English, Luganda</td>
+        </tr>
+        <tr>
+          <td>Currency:</td>
+          <td>Ugandan Shilling (UGX)</td>
+        </tr>
+        <tr>
+          <td>Time Zone:</td>
+          <td>East Africa Time (GMT+3)</td>
+        </tr>
+        <tr>
+          <td>Calling Code:</td>
+          <td>+256</td>
+        </tr>
+        <tr>
+          <td>Internet TLD:</td>
+          <td>.ug</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="weather-card">
+      <h2>Weather ⛅️</h2>
+
+      <table>
+        <tr>
+          <td>Temperature:</td>
+          <td>64°F</td>
+        </tr>
+        <tr>
+          <td>Conditions:</td>
+          <td>Partly Cloudy</td>
+        </tr>
+        <tr>
+          <td>Wind:</td>
+          <td>19.71 mph</td>
+        </tr>
+        <tr>
+          <!-- <td>Wind Chill:</td> -->
+          <td id="windChill"> /td>
+        </tr>
+      </table>
+    </section>
+  </div>
+
+  <footer>
+    <p>
+      &copy; <span id="currentYear"></span> Muwanda Innocent. Kampala Uganda
+    </p>
+    <p id="lastModified">
+      Last lastModified: <span id="displayDateModified"></span>
+    </p>
+  </footer>
+</body>
+
+</html>
