@@ -90,7 +90,6 @@ main {
     gap: 20px;
     justify-content: center;
     width: 100%;
-    /* max-width: 1200px; */
     margin: 20px 0;
     min-height: 300px;
 }
