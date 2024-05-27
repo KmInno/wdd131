@@ -1,8 +1,13 @@
+function displayDateModified() {
+  const lastModified = new Date(document.lastModified);
+  const lastModifiedSpan = document.getElementById('displayDateModified');
+  lastModifiedSpan.textContent = lastModified.toLocaleString();
+}
 
-
-window.onload = function () {
+window.onload = function() {
   displayDateModified();
-};
+}
+
 
 const mainnav = document.querySelector("nav ul");
 const hambutton = document.querySelector("#menu");

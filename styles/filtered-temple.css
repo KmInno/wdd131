@@ -1,18 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 :root {
     --font-family: "Roboto", sans-serif;
     --font-size: 1.2rem;
-    --font-weight: 500;
-    --background-color: rgb(48, 160, 252);
-    --background-color2: #222;
-    --color: white;
-
+    --font-weight: 900;
+    --background-color: White; /* Darker blue for better contrast */
+    --background-color3: #b0c4de; /* Lighter blue */
+    --background-color2: #000; /* Black for hover state */
+    --color: #fff; /* White text */
+    --color-contrast: #003366; /* Even darker blue for better contrast */
+    --color-contrast-light: #0055a4; /* Dark blue for hover contrast */
 }
 
-
-
-
+/* Header Styling */
 header {
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -22,22 +20,29 @@ header {
     align-items: center;
     background-color: var(--background-color);
     padding: 10px 20px;
-
+    margin: 0;
 }
 
+header h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-contrast); /* Improved contrast */
+}
+
+/* H2 Styling */
 h2 {
     text-align: center;
     font-size: var(--font-size);
     font-weight: var(--font-weight);
-    color: black;
+    color: var(--color-contrast); /* Improved contrast */
 }
 
+/* Navigation Styling */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--color);
-
 }
 
 nav ul {
@@ -55,35 +60,30 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--color-contrast); /* Improved contrast */
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: var(--background-color2);
+    color: var(--color-contrast-light); /* Improved contrast for hover */
 }
 
-header h1 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #fff;
-}
-
+/* Body Styling */
 body {
     font-family: var(--font-family);
     font-size: var(--font-size);
-    font-size: var(--font-size);
-    /* margin: 0;
-    padding: 0; */
+    background-color: var(--background-color3);
 }
 
+/* Main Styling */
 main {
     padding: 10px;
     width: 100%;
+    background-color: var(--background-color3);
 }
 
-
+/* Card Container Styling */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -94,13 +94,9 @@ main {
     min-height: 300px;
 }
 
-/* .card-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-} */
+/* Card Styling */
 .card {
-    background-color: white;
+    background-color: var(--color);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -116,7 +112,6 @@ main {
 .card figure {
     margin: 0;
     padding: 16px;
-    border-bottom: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 
@@ -140,16 +135,17 @@ main {
     font-weight: bold;
 }
 
+/* Footer Styling */
 footer {
-    background-color: var(--background-color2);
-    color: var(--color);
+    background-color: var(--background-color);
+    color: var(--color-contrast); /* Improved contrast */
     padding: 20px;
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid #ddd;
-    bottom: auto;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.2em;
@@ -173,7 +169,7 @@ footer {
     }
 
     figure {
-        width: 100%x;
+        width: 100%;
     }
 }
 
