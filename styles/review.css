@@ -1,0 +1,33 @@
+* {
+    /* margin: auto; */
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    /* margin: auto; */
+}
+
+header,
+footer {
+    font-size: .5rem 2%;
+    background-color: rgb(150, 14, 77);
+    color: white;
+    text-align: center;
+
+}
+
+body {
+    display: block;
+}
+
+main {
+    text-align: center;
+    height: auto;
+}
+
+p {
+    font-size: large;
+
+}
+
+footer {
+    bottom: auto;
+}

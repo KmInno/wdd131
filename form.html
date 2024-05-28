@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week05 Form">
+    <meta name="author" content="Muwanda Innocent">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <!-- <p>Number of visits: <span id="visitCount">0</span></p> -->
+        <form action="review.html" method="get" class="tf1" id="reviewForm">
+            <fieldset>
+                <h2>Product Review</h2>
+                <label class="subs">Product Name
+                    <select name="product" required id="productSelect">
+                        <option value="Please Select">Please Select Product </option>
+                    </select>
+                </label>
+
+                <label class="subs">Date of Installation
+                    <input type="date" name="installationdate">
+                </label>
+
+                <div class="rating-section"></div>
+                <span>Overall Rating</span>
+                <div class="radioButtons">
+                    <label><input type="radio" name="starRating" value="oneStar" class="ratingButton" required>☆</label>
+                    <label><input type="radio" name="starRating" value="twoStar" class="ratingButton"
+                            required>☆☆</label>
+                    <label><input type="radio" name="starRating" value="threeStar" class="ratingButton"
+                            required>☆☆☆</label>
+                    <label><input type="radio" name="starRating" value="fourStar" class="ratingButton"
+                            required>☆☆☆☆</label>
+                    <label><input type="radio" name="starRating" value="fiveStar" class="ratingButton"
+                            required>☆☆☆☆☆</label>
+                </div>
+
+                <div class="features-section">
+                    <span>Which feature did you find useful in the product? <br>
+                        <i>(Check all that apply)</i></span>
+                    <label><input type="checkbox" name="Durability" value="yes">Durability</label>
+                    <label><input type="checkbox" name="Ease of use" value="yes">Ease of use</label>
+                    <label><input type="checkbox" name="Performance" value="yes">Performance</label>
+                    <label><input type="checkbox" name="Design" value="yes">Design</label>
+                </div>
+
+                <label>Written Review
+                    <span class="op">(optional)</span>
+                    <span>
+                        <textarea name="description" class="description"></textarea>
+                    </span>
+                </label>
+
+                <label>First Name
+                    <span class="op">(optional)</span>
+                    <input type="text" name="fname">
+                </label>
+
+                <input type="submit" value="Post Review" id="reviewCount">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Muwanda Innocent. Kampala Uganda
+        </p>
+        <p id="lastModified">
+            Last lastModified: <span id="displayDateModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

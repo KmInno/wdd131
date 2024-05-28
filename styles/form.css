@@ -1,0 +1,137 @@
+
+
+    *{
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+    header,
+    footer {
+        font-size: .5rem 2%;
+        background-color: rgb(150, 14, 77);
+        color: white;
+        max-width: 500px;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    body {
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+    }
+
+    main {
+        padding: 0 2%;
+        min-height: 20rem;
+    }
+
+    /* ----form styles--- */
+    .tf1 {
+        margin: auto;
+        padding: 2rem;
+        max-width: 500px;
+
+    }
+
+    .tf1 fieldset{
+        border-radius: 6px;
+        border: 1px solid #b1adad;
+        background-color: #ccc;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .tf1 div {
+        padding-top: 1rem;
+
+    }
+
+    .subs {
+        padding: 0 .5rem;
+        color: black;
+        font-size: medium;
+    }
+
+    .tf1 label {
+        display: block;
+        padding-top: 1rem;
+        font-size: .9rem;
+    }
+
+    .features-section label {
+        display: block;
+    }
+
+    .tf1 input[type='radio'],
+    .tf1 input[type='checkbox'] {
+        margin-right: 6px;
+    }
+
+    .tf1 input[type="text"],
+    .tf1 select,
+    .description,
+    .tf1 input[type="date"] {
+        display: block;
+        background-color: #ffffff;
+        border-radius: 6px;
+        padding: 0.7rem;
+        max-width: 400px;
+        width: 100%;
+    }
+    .rating input {
+        display: block;
+        padding-top: 1rem;
+        font-size: .9rem;
+    }
+    
+
+    .tf1 input[type="radio"]{
+        background-color: red;
+    }
+    
+    .radioButtons {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        font-size: 12px;
+    }
+
+    .ratingButton{
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .op {
+        color: blue;
+    }
+
+    .tf1 input[type="submit"] {
+        background-color: #b94f78;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: .8rem;
+        width: 100%;
+        max-width: 400px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        box-shadow: 1px 1px 4px #ccc;
+    }
+
+    
