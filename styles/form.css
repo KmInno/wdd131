@@ -1,12 +1,18 @@
 
 
-    *{
+    header,
+    main,
+    footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+    * {
         margin: auto;
         box-sizing: border-box;
     }
 
     header,
-    nav,
     main,
     footer {
         max-width: 64rem;
@@ -21,7 +27,7 @@
         max-width: 500px;
     }
 
-    footer{
+    footer {
         text-align: center;
     }
 
@@ -40,14 +46,14 @@
     }
 
     /* ----form styles--- */
-    .tf1 {
+    #tf1 {
         margin: auto;
         padding: 2rem;
         max-width: 500px;
 
     }
 
-    .tf1 fieldset{
+    #tf1 fieldset {
         border-radius: 6px;
         border: 1px solid #b1adad;
         background-color: #ccc;
@@ -55,36 +61,36 @@
         margin-bottom: 1rem;
     }
 
-    .tf1 div {
+    #tf1 div {
         padding-top: 1rem;
 
     }
 
-    .subs {
+    #subs {
         padding: 0 .5rem;
         color: black;
         font-size: medium;
     }
 
-    .tf1 label {
+    #tf1 label {
         display: block;
         padding-top: 1rem;
         font-size: .9rem;
     }
 
-    .features-section label {
+    #features-section label {
         display: block;
     }
 
-    .tf1 input[type='radio'],
-    .tf1 input[type='checkbox'] {
+    #tf1 input[type='radio'],
+    #tf1 input[type='checkbox'] {
         margin-right: 6px;
     }
 
-    .tf1 input[type="text"],
-    .tf1 select,
-    .description,
-    .tf1 input[type="date"] {
+    #tf1 input[type="text"],
+    #tf1 select,
+    #description,
+    #tf1 input[type="date"] {
         display: block;
         background-color: #ffffff;
         border-radius: 6px;
@@ -92,35 +98,36 @@
         max-width: 400px;
         width: 100%;
     }
-    .rating input {
+
+    #rating input {
         display: block;
         padding-top: 1rem;
         font-size: .9rem;
     }
-    
 
-    .tf1 input[type="radio"]{
+
+    #tf1 input[type="radio"] {
         background-color: red;
     }
-    
-    .radioButtons {
+
+    #radioButtons {
         display: flex;
         flex-direction: row;
         /* align-items: center; */
         font-size: 12px;
     }
 
-    .ratingButton{
+    #ratingButton {
         display: flex;
         align-items: center;
         margin: auto;
     }
 
-    .op {
+    #op {
         color: blue;
     }
 
-    .tf1 input[type="submit"] {
+    #tf1 input[type="submit"] {
         background-color: #b94f78;
         color: #ffffff;
         border: none;
@@ -133,5 +140,3 @@
         margin-top: 1rem;
         box-shadow: 1px 1px 4px #ccc;
     }
-
-    
