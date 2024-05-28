@@ -17,31 +17,27 @@
     </header>
     <main>
         <!-- <p>Number of visits: <span id="visitCount">0</span></p> -->
-        <form action="review.html" method="get" id="tf1" id="reviewForm">
+        <form action="review.html" method="get" id="reviewForm">
             <fieldset>
                 <h2>Product Review</h2>
-                <label id="subs">Product Name
+                <label id="productLabel">Product Name
                     <select name="product" required id="productSelect">
-                        <option value="Please Select">Please Select Product </option>
+                        <option value="">Please Select Product</option>
                     </select>
                 </label>
 
-                <label id="subs">Date of Installation
+                <label id="installationLabel">Date of Installation
                     <input type="date" name="installationdate">
                 </label>
 
                 <div id="rating-section"></div>
                 <span>Overall Rating</span>
                 <div id="radioButtons">
-                    <label><input type="radio" name="starRating" value="oneStar" id="ratingButton" required>☆</label>
-                    <label><input type="radio" name="starRating" value="twoStar" id="ratingButton"
-                            required>☆☆</label>
-                    <label><input type="radio" name="starRating" value="threeStar" id="ratingButton"
-                            required>☆☆☆</label>
-                    <label><input type="radio" name="starRating" value="fourStar" id="ratingButton"
-                            required>☆☆☆☆</label>
-                    <label><input type="radio" name="starRating" value="fiveStar" id="ratingButton"
-                            required>☆☆☆☆☆</label>
+                    <label><input type="radio" name="starRating" value="oneStar" required>☆</label>
+                    <label><input type="radio" name="starRating" value="twoStar" required>☆☆</label>
+                    <label><input type="radio" name="starRating" value="threeStar" required>☆☆☆</label>
+                    <label><input type="radio" name="starRating" value="fourStar" required>☆☆☆☆</label>
+                    <label><input type="radio" name="starRating" value="fiveStar" required>☆☆☆☆☆</label>
                 </div>
 
                 <div id="features-section">
@@ -54,14 +50,14 @@
                 </div>
 
                 <label>Written Review
-                    <span id="op">(optional)</span>
+                    <span class="optional">(optional)</span>
                     <span>
                         <textarea name="description" id="description"></textarea>
                     </span>
                 </label>
 
                 <label>First Name
-                    <span id="op">(optional)</span>
+                    <span class="optional">(optional)</span>
                     <input type="text" name="fname">
                 </label>
 
