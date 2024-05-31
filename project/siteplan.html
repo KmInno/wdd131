@@ -3,62 +3,126 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent - 2024 - Personal Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent - 2024 - Personal Website">
     <meta name="author" content="Muwanda Innocent">
-    <link rel="stylesheet" href="styles/siteplan.css" />
+    <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/siteplan.js" defer></script>
     <title>Personal Website</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <h3>Personal</h3>
+            <p class="small">km companies</p>
+        </div>
+        <div class="buttons">
+            <button>Download CV</button>
+            <button>Discover Me</button>
+        </div>
     </header>
+
     <main>
-        <section class="section1">
-            <h1>Purpose</h1>
-            <p>This site is about me and my career. It will have all the skills I possess as a person.
-                This site is meant for my employers or those who want to hire me to see all the relevant information
-                about
-                me such
-                as the time zone,
-                where I live, working hours, and also my charges.
-            </p>
+        <section class="about-me section">
+            <div class="info">
+                <h2>About Me</h2>
+                <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti
+                    fugit, nihil praesentium, facere.</p>
+                <div class="hero-info">
+                    <h2>General Info</h2>
+                    <ul>
+                        <li><span>Date of Birth:</span> Aug 25, 1988</li>
+                        <li><span>Address:</span> Rosia Road 55, Gibraltar, UK</li>
+                        <li><span>E-mail:</span> mariawilliams@company.com</li>
+                        <li><span>Phone:</span> +43 5266 22 345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/profile.jpg" alt="About Me Image">
+            </div>
         </section>
 
-        <section class="section2">
-            <p>
-                This site will also include links to the sites or projects that I have worked on, such as the recent
-                projects that we designed in this course.
-            </p>
+        <div class="social-media">
+            <span class="social-media-text">Social Media Links</span>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/insta_social.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+
+        <section class="work-experience section">
+            <h2>Work Experience</h2>
+            <div class="experience">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
+            <div class="experience">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
         </section>
 
-        <section class="section3">
-            <h2>Scenarios Questions</h2>
-            <p>
-                What am I most skilled in?<br>
-                Where did I attend school?<br>
-                How much experience do I have?<br>
-                How many hours can I work a week?<br>
-                How much do I charge?
-            </p>
+        <section class="education section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
+            <div class="education-item">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
         </section>
 
-        <h3>Colors</h3>
-        <p>Header section background: #f2f7f8</p>
-        <p>Section 1 background: #f2f7f8</p>
-        <p>Section 2 background: #ffffff</p>
-        <p>Section 3 background: #727272</p>
+        <section class="references section">
+            <h2>References</h2>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                praesentium,
+                facere tempora velit officia minima magni voluptatum quo porro molestias voluptates sit, beatae in modi
+                sequi."</p>
+        </section>
 
-        <h3>Fonts</h3>
-        <p>Roboto, sans-serif</p>
-        <h3>Desktop view</h3>
-        <img src="images/newframe.png" alt="wireframe">
-
-        <h3>mobile view</h3>
-        <img src="images/mobile2view.png" alt="mobile view">
+        <section class="portfolio section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-images" id="portfolioImages"></div>
+        </section>
+        
+        <section class="contact-me section">
+            <h2>Contact Me</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label> First Name* <input type="text" name="fname" required></label>
+                    <label> Last Name* <input type="text" name="Lname" required></label>
+                    <label> Phone <input type="tel" name="phone" placeholder="(123) 456-7890"></label>
+                    <label> Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <button type="submit">Send Message</button> 
+                </fieldset>
+            </form>
+        </section>
+        
     </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+        <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+    </footer>
 </body>
 
 </html>
