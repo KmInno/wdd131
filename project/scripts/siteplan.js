@@ -17,7 +17,7 @@ function displayDateModified() {
             description: "Temple Project 1"
         },
         {
-            imageUrl: "https://seetruetechnology.com/wp-content/uploads/2022/02/BG-7.jpg",
+            imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/96/56/36/sunset-in-uganda-mountains.jpg?w=1400&h=1400&s=1",
             linkUrl: "https://example.com/project2",
             description: "Temple Project 2"
         },
