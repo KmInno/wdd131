@@ -2,10 +2,15 @@
 
 :root {
     --background-color: #f4f4f4;
-    --section1-color: #f2f7f8;
-    --section2-color: #f2f7f8;
-    --section3-color: #ececec;
-    --button-color: rgb(105, 247, 105);
+    --section1-color: #ffffff; /* White for light sections */
+    --section2-color: #f7f7f7; /* Very light gray */
+    --section3-color: #ececec; /* Light gray */
+    --button-color: #0056b3;
+    --button-hover-color: #004a9b; /* Darkened for better contrast */
+    --text-color: #333333; /* Dark enough for contrast */
+    --heading-color: #0056b3; /* Dark blue for headings */
+    --footer-bg-color: #333333; /* Dark background for footer */
+    --footer-text-color: #f4f4f4; /* Light text for footer */
     --font-family: Arial, sans-serif;
     --font-family2: "Reddit Mono", monospace;
     --primary-font-size: 18px;
@@ -13,6 +18,7 @@
     --heading-font-size: 24px;
     --large-heading-font-size: 36px;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -22,6 +28,7 @@ body {
     font-size: var(--primary-font-size);
     margin: 0;
     background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -29,26 +36,76 @@ body {
     justify-content: center;
 }
 
-header {
+header,
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--section3-color);
+    text-align: center;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: var(--background-color);
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
+    flex-direction: column;
 }
 
-header .logo h3 {
-    font-size: var(--large-heading-font-size);
-    gap: 0;
+header {
+    background-color: var(--section3-color);
 }
-header .logo p{
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+}
+
+.menu {
+    flex: 1;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-header .buttons button {
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--secondary-font-size);
+    transition: color 0.3s;
+    font-weight: 500px;
+}
+
+.menu ul li a:hover {
+    color: var(--button-color);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo h3,
+.logo p,
+.section h2 {
+    font-size: var(--large-heading-font-size);
+    margin: 0;
+    color: var(--heading-color);
+}
+
+.buttons button,
+.contact-me button {
     padding: 10px 20px;
     cursor: pointer;
     font-size: var(--secondary-font-size);
@@ -59,82 +116,55 @@ header .buttons button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-header .buttons button:hover {
-    background-color: #0056b3;
+.buttons button:hover,
+.contact-me button:hover {
+    background-color: var(--button-hover-color);
     transform: scale(1.05);
-}
-
-main {
-    padding: 0;
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
 }
 
 section {
     padding: 40px 20px;
-    border-radius: 0;
     margin: 0;
-}
-
-.project img {
     width: 100%;
-    height: auto;
-    max-width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 1500px;
+    border-radius: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.about-me {
-    background-color: var(--section1-color);
-}
-
-.work-experience {
-    background-color: var(--section2-color);
-}
-
-.education {
-    background-color: var(--section3-color);
-}
-
-.references {
-    background-color: var(--section1-color);
-}
-
-.portfolio {
-    background-color: var(--section2-color);
-}
-
-.contact-me {
-    background-color: var(--section3-color);
+section:not(.visible) {
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 h2 {
     font-size: var(--large-heading-font-size);
     margin-bottom: 20px;
     text-align: left;
+    color: var(--heading-color);
 }
 
-.about-me, .contact-me {
+.about-me,
+.contact-me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.about-me .info, .about-me .image {
+.about-me .info,
+.about-me .image,
+.experience,
+.education-item,
+.references p {
     flex: 1;
     margin: 10px;
-}
-
-.info-text {
-    font-size: var(--secondary-font-size);
-    margin: 20px 0;
     padding: 0.5rem;
+    font-size: var(--secondary-font-size);
 }
 
 .hero-info ul {
@@ -151,6 +181,13 @@ h2 {
     font-weight: bold;
 }
 
+footer {
+    background-color: var(--footer-bg-color);
+    flex-direction: column;
+    align-items: center;
+    color: var(--footer-text-color);
+}
+
 .social-media {
     display: flex;
     justify-content: space-between;
@@ -159,21 +196,15 @@ h2 {
     margin-top: 20px;
     padding: 30px 0;
     border-top: 1px solid #ccc;
-    background-color: var(--section3-color);
-}
-
-.social-media .social-media-text {
-    font-size: var(--secondary-font-size);
 }
 
 .social-media-text {
-    margin-left: 10rem;
+    font-size: var(--secondary-font-size);
 }
 
 .social-media-icons {
     display: flex;
     gap: 10px;
-    margin-right: 10rem;
 }
 
 .social-media a {
@@ -187,28 +218,15 @@ h2 {
     height: 100%;
 }
 
-div.experience, div.education-item, .references.section p {
-    margin-left: 5rem;
-}
-
-footer {
-    padding: 20px;
-    background-color: var(--background-color);
-    text-align: center;
-    font-size: var(--secondary-font-size);
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .portfolio-images {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.section.portfolio h2{
+    text-align: center;
 }
 
 .project {
@@ -219,52 +237,19 @@ footer {
     width: 100%;
     height: auto;
     max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project p {
     font-size: var(--secondary-font-size);
     margin-top: 10px;
 }
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
 
-.project img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio.section h2{
-    text-align: center;
-}
-
-.contact-me form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-me label {
-    font-size: var(--secondary-font-size);
-}
-
-.contact-me input {
-    width: 100%;
-    padding: 10px;
-    font-size: var(--primary-font-size);
-    margin-top: 10px;
-}
-
-/* Form Container and Fieldset */
-
-.contact-me.section{
-    display: block;
-}
-
-.contact-me h2 {
-    text-align: center;
-}
 .contact-me form {
     width: 100%;
     max-width: 600px;
@@ -281,13 +266,12 @@ footer {
     margin: 0;
 }
 
-/* Labels and Inputs */
 .contact-me label {
     display: block;
     font-size: var(--secondary-font-size);
     margin-bottom: 10px;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
 }
 
 .contact-me input {
@@ -301,30 +285,81 @@ footer {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Input Focus Effect */
 .contact-me input:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
-/* Submit Button */
 .contact-me button {
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: var(--secondary-font-size);
-    background-color: var(--button-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
     display: block;
     width: 100%;
     margin-top: 20px;
 }
 
-.contact-me button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+@media screen and (max-width: 768px) {
+    header,
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-media-text {
+        display: none;
+    }
+
+    .social-media-icons {
+        margin-right: 0;
+    }
 }
 
+.about-me {
+    background-color: var(--section1-color);
+}
+
+.work-experience {
+    background-color: var(--section2-color);
+}
+
+.education {
+    background-color: var(--section1-color);
+}
+
+.references {
+    background-color: var(--section2-color);
+}
+
+.portfolio {
+    background-color: var(--section1-color);
+}
+
+.skills {
+    background-color: var(--section2-color);
+}
+
+.availability {
+    background-color: var(--section1-color);
+}
+
+.contact-me {
+    background-color: var(--section2-color);
+}
+
+.section.availability h2{
+    text-align: center;
+}
+.section.availability p{
+    text-align: center;
+}
+
+.section.contact-me {
+    display: flex;
+    flex-direction: column;
+}
