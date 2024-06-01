@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Muwanda Innocent - 2024 - Personal Website">
+    <meta name="author" content="Muwanda Innocent">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
+    <title>Personal Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3>Personal</h3>
+            <p class="small">km companies</p>
+        </div>
+        <div class="buttons">
+            <button>Download CV</button>
+            <button>Discover Me</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-me section">
+            <div class="info">
+                <h2>About Me</h2>
+                <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti
+                    fugit, nihil praesentium, facere.</p>
+                <div class="hero-info">
+                    <h2>General Info</h2>
+                    <ul>
+                        <li><span>Date of Birth:</span> Aug 25, 1988</li>
+                        <li><span>Address:</span> Rosia Road 55, Gibraltar, UK</li>
+                        <li><span>E-mail:</span> mariawilliams@company.com</li>
+                        <li><span>Phone:</span> +43 5266 22 345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/profile.jpg" alt="About Me Image">
+            </div>
+        </section>
+
+        <div class="social-media">
+            <span class="social-media-text">Social Media Links</span>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/insta_social.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+
+        <section class="work-experience section">
+            <h2>Work Experience</h2>
+            <div class="experience">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
+            <div class="experience">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
+        </section>
+
+        <section class="education section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
+            <div class="education-item">
+                <h3>2016-present</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                    praesentium, facere.</p>
+            </div>
+        </section>
+
+        <section class="references section">
+            <h2>References</h2>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem corrupti fugit, nihil
+                praesentium,
+                facere tempora velit officia minima magni voluptatum quo porro molestias voluptates sit, beatae in modi
+                sequi."</p>
+        </section>
+
+        <section class="portfolio section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-images" id="portfolioImages"></div>
+        </section>
+        
+        <section class="contact-me section">
+            <h2>Contact Me</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label> First Name* <input type="text" name="fname" required></label>
+                    <label> Last Name* <input type="text" name="Lname" required></label>
+                    <label> Phone <input type="tel" name="phone" placeholder="(123) 456-7890"></label>
+                    <label> Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <button type="submit">Send Message</button> 
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Muwanda Innocent. Kampala, Uganda</p>
+        <p id="lastModified">Last Modified: <span id="displayDateModified"></span></p>
+    </footer>
+</body>
+
+</html>
