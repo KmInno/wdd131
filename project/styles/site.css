@@ -83,7 +83,7 @@ footer {
     color: var(--text-color);
     font-size: var(--secondary-font-size);
     transition: color 0.3s;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .menu ul li a:hover {
