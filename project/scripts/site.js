@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display portfolio projects
     const portfolioImagesContainer = document.getElementById("portfolioImages");
-    portfolioImagesContainer.innerHTML = ''; // Clear any existing content
+    portfolioImagesContainer.innerHTML = ''; 
 
     projects.forEach(project => {
         const projectElement = document.createElement("div");
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const imgElement = document.createElement("img");
         imgElement.src = project.imageUrl;
         imgElement.alt = project.description;
-        imgElement.loading = "lazy"; // Lazy loading
+        imgElement.loading = "lazy"; 
 
         const textElement = document.createElement("p");
         textElement.textContent = project.description;
@@ -91,12 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         projects.push(newProject);
         localStorage.setItem('projects', JSON.stringify(projects));
-        displayProjects(); // Call the function to update the display
+        displayProjects(); 
     }
 
     // Function to display portfolio projects
     function displayProjects() {
-        portfolioImagesContainer.innerHTML = ''; // Clear the container
+        portfolioImagesContainer.innerHTML = ''; 
         projects.forEach(project => {
             const projectElement = document.createElement("div");
             projectElement.className = "project";
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const imgElement = document.createElement("img");
             imgElement.src = project.imageUrl;
             imgElement.alt = project.description;
-            imgElement.loading = "lazy"; // Lazy loading
+            imgElement.loading = "lazy"; 
 
             const textElement = document.createElement("p");
             textElement.textContent = project.description;
