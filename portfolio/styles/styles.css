@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e14e2d;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #f4f4f4;
+}
+
+.availability {
+    margin-top: 20px;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.availability h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.availability p {
+    margin: 5px 0 0;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    font-weight: 500;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1 1 calc(33% - 30px);
+    max-width: calc(33% - 30px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact form input[type="submit"] {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #e14e2d;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}

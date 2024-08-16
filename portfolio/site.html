@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Muwanda Innocent">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap">
+    <script src="scripts/site.js" defer></script>
+</head>
+<body>
+    <!-- the header section -->
+    <header>
+        <h1>Muwanda Innocent</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- the main section -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <!-- Personal Image -->
+            <img src="images/profile.jpg" alt="Muwanda Innocent" class="profile-image">
+            <p>I am Muwanda Innocent, a passionate web developer with expertise in creating dynamic and responsive web applications. I aim to leverage my skills to contribute to impactful projects and grow professionally.</p>
+            <!-- Availability -->
+            <div class="availability">
+                <h3>Availability</h3>
+                <p>Currently Available for Full-Time Opportunities</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Angular, Vue.js</li>
+                <li>Node.js, Express, MongoDB</li>
+                <li>Version Control (Git & GitHub)</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-images" id="portfolioImages">
+                <!-- JavaScript will load images and links here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+            <p>Phone: +123 456 7890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+            <p>GitHub: <a href="https://github.com/yourprofile">github.com/yourprofile</a></p>
+            <!-- Optional: Contact Form -->
+            <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <!-- the footer section -->
+    <footer>
+        <p>&copy; 2024 Muwanda Innocent. All rights reserved.</p>
+        <p><a href="#contact">Back to Top</a></p>
+    </footer>
+    
+</body>
+</html>
